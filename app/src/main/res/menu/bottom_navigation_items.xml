@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/ic_icon_news_feed"
+        android:title="@string/news"/>
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/ic_icon_games"
+        android:title="@string/games"/>
+  <!--  <item
+        android:id="@+id/action_item6"
+        android:icon="@drawable/ic_park_tickets_couple"
+        android:title="@string/services"/>
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/ic_icon_events"
+        android:title="@string/events"/>-->
+    <item
+        android:id="@+id/action_item4"
+        android:icon="@drawable/ic_icon_settings"
+        android:title="@string/settings"/>
+</menu>

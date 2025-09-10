@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/user_profile1" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/nameLinearLy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/departmentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="Department"
+                android:textColor="@color/greyDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bookingStatusLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/acceptImageImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_accept"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentBottom="true"
+                />
+            <ImageView
+                android:id="@+id/bookingStatusImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginRight="12dp" />
+            <ImageView
+                android:id="@+id/deletePlayer"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/deletebutton"
+                android:layout_marginRight="10dp" />
+
+
+            <ImageView
+                android:id="@+id/callTextView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_mail_outline_black_24dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                 />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginRight="5dp"
+
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/withdrawTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/withdraw"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:background="@drawable/button_orange_round"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<!-- Progress Layout contains Progress Bar and a TextView -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/more_progress_layout"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:padding="5dp" >
+
+
+    <ProgressBar
+        android:id="@+id/more_progress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="visible"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminate="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/more_progress"
+        android:padding="5dp"
+        android:text="@string/loadmore"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+</RelativeLayout>

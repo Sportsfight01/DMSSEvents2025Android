@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Dmss Events</string>
+    <string name="app_name1">SportsFight</string>
+    <string name="games_minutes_left">Games Booking Summary</string>
+    <string name="reset_every_week">( Reset Every Week )</string>
+    <string name="enter_email">Enter Email Id</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="book_my_game">Book My Game</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="my_past_bookings">My Past Bookings</string>
+    <string name="pending_bookings">Pending Bookings</string>
+    <string name="email_address_ext">\@digitalminds.solutions</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <!-- <string name="award_descrip">MileStone 2017 Award winner's List\n will be displayed after completion of event ...15th April onwards</string>-->
+    <string name="select_service_type">Select Service Type</string>
+    <string name="select_sub_type">Select Sub Type</string>
+    <string name="comment">Comment</string>
+    <string name="submit">Submit</string>
+
+    <string name="dmsSharedEventsPreference">DmsSharedEventsPreference</string>
+    <string name="pref_userDetails">UserDetails</string>
+    <string name="pref_fcm_token_id">FCMToken</string>
+    <string name="loading">Loading...</string>
+    <string name="pref_userLoggedIn">UserLoggedIn</string>
+    <string name="pref_lastLoggedInId">lastLoggedInId</string>
+    <string name="pref_profilePicUrl">ProfilePicUrl</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="digitalminds">Digitalminds</string>
+    <string name="login_welcome_text">Welcome Back,</string>
+    <string name="login_welcome_text1">Sign in to continue</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="pref_nominationCount">ProfilePicUrl</string>
+    <string name="news">News</string>
+    <string name="games">Games</string>
+    <string name="bookings">Bookings</string>
+    <string name="services">Services</string>
+
+    <string name="settings">Settings</string>
+    <string name="events">Events</string>
+    <string name="profile">Profile Details</string>
+    <string name="notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="choose_game">Choose Game</string>
+    <string name="choose_timings">Choose Timings</string>
+    <string name="choose_partner">Choose Partner</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="recent_players">My Preferred Players for </string>
+    <string name="recent_players1">Please add preferred players from add more players section.</string>
+    <string name="add_more_players">Add More Preferred Players</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="send">Send</string>
+    <string name="delete_game">Delete Game</string>
+    <string name="select">Select</string>
+    <string name="delete_game_text">If you withdraw means.Complete game will be cancelled</string>
+    <string name="minutes_played">minutes Booked in Current Week</string>
+    <string name="depart_or_employeename">Emp Name</string>
+    <string name="you_can_choose_max">Select Preferred Players for snooker</string>
+    <string-array name="Title">
+        <item>Bus Start From Office</item>
+        <item>Welcome Drink</item>
+        <item>Welcome Speech</item>
+        <item>Mile Stone awards and Events</item>
+        <item>Lunch Time</item>
+        <item>Break Time</item>
+        <item>Dinner BreakFast</item>
+        <item>Fun Time</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="Time">
+        <item>14th April 9:30 am</item>
+        <item>14th April 10:15 am</item>
+        <item>14th April 11:00 am</item>
+        <item>14th April 11:15 am</item>
+        <item>14th April 1:00 pm</item>
+        <item>14th April 2:00 pm</item>
+        <item>14th April 8:00 pm</item>
+        <item>14th April 8:30 pm</item>
+        <item>14th April 10:00 pm</item>
+    </string-array>
+    <integer-array name="Image">
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+        <item>@drawable/time</item>
+    </integer-array>
+    <string name="eligibility"> \u2022 Eligibility: </string>
+
+    <string name="loadmore">Loading please wait...</string>
+    <string name="nomine1">\u2022  Achieves highest Client Satisfaction Numbers.</string>
+    <string name="nomine2">\u2022  For addressing all client queries efficiently, achieving customer delight through patience, alertness and no doubt the adeptness in the field. </string>
+    <string name="nomine3">\u2022  Handles all transactions efficiently.\n\u2022  Handles vendors/clients, striking most beneficial deals for the company inclusive of dealings with Burbank Group of Companies.</string>
+    <string name="nomine4">\u2022  Within a short span shows potential growth.</string>
+    <string name="nomine5">\u2022  Demonstrates professional behaviour through willingness to cooperate, work, and communicate with others in the workplace.\n\u2022  Not just restricts himself/herself to the work assigned but when required is ready to go the extra mile, do the Above and Beyond.</string>
+    <string name="nomine6">\u2022  Successfully exceeds the goals.\n\u2022  Shows prospects of being a value add to the team and organisation.</string>
+    <string name="nomine7">\u2022  Has always being consistently performing par excellence, not restricting himself/herself to one role.\n\u2022  Displays initiative and excellence in performing core job requirements.\n\u2022  Best exemplifies the Companys mission.</string>
+    <string name="nomine8">\u2022  Fosters an atmosphere of collaboration and creativity, which contributes to the efficiency and effectiveness of productivity.\n\u2022  Demonstrates leadership qualities by effectively managing their staff, service, system or work.\n\u2022  Leads changes or improvements for the benefit of their peers.\n\u2022  Inspires and motivates others to take advantage of opportunities that enhance their professional or personal lives.\n\u2022  Empowers others to achieve results in support of their team.</string>
+    <string name="nomine9">\u2022  Shows the Highest Growth - in terms of numbers, business/ revenue generating, increase in projects, achieving highest level of client satisfaction.\n\u2022  Demonstrates/ upholds all the company policies ensuring a constructive and positive work environment. </string>
+    <string name="nomine10">\u2022  Developed an effective solution to a problem in a productive manner or improved a solutions overall effectiveness through a new method or approach.\n\u2022  Developed and implemented a plan that benefits the team/department and thereby the organisation.\n\u2022  Generated valuable ideas that have helped to develop new or improved processes, methods, systems, programs, or services for their team, department, or the organisation.\n\u2022  Who brings in a change within the system to increase the efficiency and sustainability of the system. </string>
+    <string name="nomine11">\u2022  Takes initiative to improve the bottom line of the business by ushering into new business verticals.</string>
+    <string name="nomine12">\u2022  Creates a design/UI that projects originality and excellence.</string>
+    <string name="nomine13">\u2022  Proposes, develops a business idea/plan/strategy and takes it to the market, generating revenue and covering a client base of 100. </string>
+    <string name="search_employee_name">Search By Employee Name \nOr\n Search By Department</string>
+    <string name="no_results_found">No Results Found</string>
+
+
+    <string name="txt_formal_procedure">\u2022  Nominations once submitted, cannot for  any reason be withdrawn.\n\u2022  Nominations that either do not meet the award criteria, or are not in compliance with the procedures listed above will be considered INVALID.\n\u2022 Nominees for the awards will be judged on the basis of their performance in advancing the organisation toward its goals.\n\u2022 The decision taken by the nominated Panel prevails under any given scenario.</string>
+
+    <string name="txt_informal_procedure">\u2022  Nominations once submitted, cannot for  any reason be withdrawn.\n\u2022  Nominations that either do not meet the award criteria, or are not in compliance with the procedures listed above will be considered INVALID.</string>
+
+
+    <string name="txt_formal">Milestone 2020 is the annual event celebrated at Digital Minds. Celebrated in March, it is a gathering to applaud and cheer ourselves for the efforts we put each day.\nIn order to honour outstanding employees, Digital Minds has introduced the Milestone Awards.</string>
+    <string name="txt_informal">Milestone 2020 is the annual event celebrated at Digital Minds in month of March. Informal Awards are Fun Awards to recognize few of our colleagues with their regular habits</string>
+
+
+    // location
+    <string name="location_updated">Location Updated: %1$s</string>
+
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="ok">OK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    `
+
+</resources>

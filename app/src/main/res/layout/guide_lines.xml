@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.digitalminds.dmssevent.GuideLinesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGamesList"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/applying_gradientcolor"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/guideLinesDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingBottom="10dp"
+                    android:text="Milestone 2020 is the annual event celebrated at Digital Minds. Celebrated in March, it is a gathering to applaud and cheer ourselves for the efforts we put each day.
+In order to honour outstanding employees, Digital Minds has introduced the Milestone Awards."
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="1. Nomination and Guide Lines"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingBottom="10dp"
+                    android:text="To ensure transparency, we have introduced Self-Nomination Procedure. Employees may nominate themselves for a Title they consider themselves qualified for, bearing in mind the criteria stated."
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Procedure:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    android:textStyle="bold" />
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:id="@+id/tv_procedure_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:visibility="visible"
+                    android:paddingBottom="10dp"
+                    android:text="\u2022  Nominations once submitted, cannot for  any reason be withdrawn.\n\u2022  Nominations that either do not meet the award criteria, or are not in compliance with the procedures listed above will be considered INVALID.\n\u2022 Nominees for the awards will be judged on the basis of their performance in advancing the organisation toward its goals.\n\u2022 The decision taken by the nominated Panel prevails under any given scenario. "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Eligibility:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:id="@+id/tv_eligibility_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingBottom="10dp"
+                    android:text="The awards are open to employees of Digital Minds with the below exceptions:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_eligibility_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="\u2022  Employees who are in probation.\n\u2022  Employees who are /have been in PIP in the annual year "
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="2. Awards and Criteria"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:id="@+id/tv_awards_criteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingBottom="10dp"
+                    android:text="The basis for each award selection will be determined by meeting most or all of the criteria for each award. The following awards and criteria descriptions are offered as guidelines for nominations"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introductionDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="45dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.digitalminds.dmssevent.common.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingBottom="10dp"
+                    android:text="Milestone 2019 is the annual event celebrated at Digital Minds. Celebrated in March, it is a gathering to applaud and cheer ourselves for the efforts we put each day. \n\nIn order to honour outstanding employees, Digital Minds has introduced the Milestone Awards."
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

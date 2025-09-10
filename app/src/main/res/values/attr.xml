@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer"/>
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+    <declare-styleable name="HashtagView">
+        <attr name="tagTextColor" format="color|reference"/>
+        <attr name="tagTextSize" format="dimension"/>
+        <attr name="tagTextGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="center" value="17"/>
+        </attr>
+        <attr name="tagEllipsize" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="end" value="2"/>
+            <enum name="marquee" value="3"/>
+        </attr>
+        <attr name="tagBackground" format="color|reference"/>
+        <attr name="tagForeground" format="color|reference"/>
+        <attr name="tagDrawableLeft" format="reference"/>
+        <attr name="tagSelectedDrawableLeft" format="reference"/>
+        <attr name="tagDrawableRight" format="reference"/>
+        <attr name="tagSelectedDrawableRight" format="reference"/>
+        <attr name="tagDrawablePadding" format="dimension"/>
+        <attr name="tagMargin" format="dimension"/>
+        <attr name="tagPaddingLeft" format="dimension"/>
+        <attr name="tagPaddingRight" format="dimension"/>
+        <attr name="tagPaddingTop" format="dimension"/>
+        <attr name="tagPaddingBottom" format="dimension"/>
+        <attr name="tagMinWidth" format="dimension"/>
+        <attr name="tagMaxWidth" format="dimension"/>
+        <attr name="rowMargin" format="dimension"/>
+        <attr name="rowGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="center" value="17"/>
+        </attr>
+        <attr name="rowDistribution" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="random" value="3"/>
+            <enum name="none" value="4"/>
+        </attr>
+        <attr name="rowMode" format="enum">
+            <enum name="wrap" value="0"/>
+            <enum name="stretch" value="1"/>
+            <enum name="equal" value="2"/>
+        </attr>
+        <attr name="rowsQuantity" format="integer"/>
+        <attr name="selectionMode" format="boolean"/>
+        <attr name="dynamicMode" format="boolean"/>
+        <attr name="composeMode" format="enum">
+            <enum name="origin" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+</resources>

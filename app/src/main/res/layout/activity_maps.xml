@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PermissionActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGamesList"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/applying_gradientcolor"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="Permissions"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+   <RelativeLayout
+       android:paddingStart="20dp"
+       android:paddingEnd="20dp"
+       android:paddingTop="150dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:layout_centerHorizontal="true"
+           android:id="@+id/iv_location"
+           android:src="@drawable/ic_location_on_black_24dp"
+           android:layout_width="100dp"
+           android:layout_height="100dp"/>
+
+       <TextView
+          android:textSize="18sp"
+           android:textColor="@color/black"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:layout_below="@+id/iv_location"
+           android:text="Allow Dmss Events to access this device location "
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end|bottom"
+           app:backgroundTint="#009688"
+           android:src="@drawable/ic_arrow_forward_black_24dp"
+           android:layout_margin="16dp"/>
+       
+
+
+   </RelativeLayout>
+
+</FrameLayout>

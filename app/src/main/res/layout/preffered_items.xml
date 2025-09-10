@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/selectImageViewLy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/days_corner_grey"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/user_profile1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Name"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                 />
+            <ImageView
+                android:id="@+id/closeImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_close_orange_35dp" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/deptNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Department"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/selectImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:padding="4dp"
+            android:src="@drawable/icon_filter_unselected"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

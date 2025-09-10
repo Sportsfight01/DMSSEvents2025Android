@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@color/white"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status"
+            android:text="Status"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Open"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/tv_status"
+            android:textColor="@color/green"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16/07/2020 8:19 Am"
+            android:id="@+id/date"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT"
+        android:layout_marginTop="5dp"
+        android:id="@+id/service_type"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBJECT : VPN ISSUE"
+        android:layout_marginTop="5dp"
+        android:id="@+id/issue_type"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My global protect vpn is not working,tried multple ways still it's not working"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desc"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"/>
+</LinearLayout>
