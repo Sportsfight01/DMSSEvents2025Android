@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.multidex:multidex:2.0.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/dce625bcc7f95a36815286e785cafb58/transformed/multidex-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/dce625bcc7f95a36815286e785cafb58/transformed/multidex-2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

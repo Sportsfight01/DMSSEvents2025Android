@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.constraintlayout:constraintlayout:1.1.3@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/64d8102fd5bef4a3bbc2e5e93c022a32/transformed/constraintlayout-1.1.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/64d8102fd5bef4a3bbc2e5e93c022a32/transformed/constraintlayout-1.1.3/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/64d8102fd5bef4a3bbc2e5e93c022a32/transformed/constraintlayout-1.1.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

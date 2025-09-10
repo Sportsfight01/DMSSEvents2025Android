@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.databinding:databinding-adapters:7.3.1@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b27062e737a1b0d749b6226d5453c5d0/transformed/databinding-adapters-7.3.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b27062e737a1b0d749b6226d5453c5d0/transformed/databinding-adapters-7.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b27062e737a1b0d749b6226d5453c5d0/transformed/databinding-adapters-7.3.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-adapters/7.3.1/45113c00e456ab5a2e561d995c153ca043f13fcd/databinding-adapters-7.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

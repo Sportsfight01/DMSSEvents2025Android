@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "556038522315",
+    "firebase_url": "https://dmssevents-606bf.firebaseio.com",
+    "project_id": "dmssevents-606bf",
+    "storage_bucket": "dmssevents-606bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556038522315:android:fc3c8eac4e709dc4",
+        "android_client_info": {
+          "package_name": "com.digitalminds.dmssevent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556038522315-4dej491dissnqa1kljteccp8eojsc3hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalminds.dmssevent",
+            "certificate_hash": "57824e2fb5a2106a7e2e755ae3c1fd0d5853fa43"
+          }
+        },
+        {
+          "client_id": "556038522315-gb4tc9gu9d370iphm2fdapoou0einaql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalminds.dmssevent",
+            "certificate_hash": "38a4a3f8a8b5b8207e27a5e1c75b5a75d74bb8c1"
+          }
+        },
+        {
+          "client_id": "556038522315-eg9731tps8our04fg6lo3dpdnjce9atd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalminds.dmssevent",
+            "certificate_hash": "fef741ece303f8987cd0299da1422cf5ec2a6012"
+          }
+        },
+        {
+          "client_id": "556038522315-d7n9gdjgdfvv7c6tr450bqfctu4c2fmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn7yWYcV9dcQw_d38ZGPUkE2ihSjbFbto"
+        },
+        {
+          "current_key": "AIzaSyBbOxOnBLaH7Fmnk8Aexi9OL5tgjGv0bHU"
+        },
+        {
+          "current_key": "AIzaSyAXwBwb-pHV97e3IokwS9B-xlA99Wc0nys"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556038522315-d7n9gdjgdfvv7c6tr450bqfctu4c2fmg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556038522315-e69b1uvfm9bi8vhmjj18j2kfjtb400er.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.com.digitalminds.dmssevents"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
