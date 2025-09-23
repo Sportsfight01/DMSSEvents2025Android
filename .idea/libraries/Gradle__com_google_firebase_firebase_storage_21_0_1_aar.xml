@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-storage:21.0.1@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4b6683b2a32b8a61899efc5a59ece4c/transformed/jetified-firebase-storage-21.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/21.0.1/c51a5e3e4935e5c2c65851d522968e573f0ac40c/firebase-storage-21.0.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/21.0.1/c51a5e3e4935e5c2c65851d522968e573f0ac40c/firebase-storage-21.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

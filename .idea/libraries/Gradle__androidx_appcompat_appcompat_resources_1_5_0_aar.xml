@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.appcompat:appcompat-resources:1.5.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1598b3d87269f5782a9eaf608b382782/transformed/jetified-appcompat-resources-1.5.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../../SampleApp/DigitalReceipts2020-Android-master/Code/DigitalReceiptCode/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.5.0/fb65e13b11cb4391567e748e9ab7f27a64601039/appcompat-resources-1.5.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.5.0/fb65e13b11cb4391567e748e9ab7f27a64601039/appcompat-resources-1.5.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
