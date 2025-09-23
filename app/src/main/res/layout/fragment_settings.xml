@@ -51,6 +51,17 @@
             android:layout_height="1dp"
             android:background="@color/grey"/>
         <TextView
+            android:id="@+id/textViewComplaints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fbBlue"
+            android:padding="15sp"
+            android:text="@string/complaints_suggestions"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <TextView
             android:id="@+id/textViewLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

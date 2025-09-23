@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/themecolor</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/colorAccent</item>
-       <!-- <item name="background">@drawable/applying_gradientcolor</item>-->
+        <!-- <item name="background">@drawable/applying_gradientcolor</item>-->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
