@@ -21,9 +21,32 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:visibility="visible"
+            android:background="@color/grey"/>
+        <TextView
+            android:id="@+id/textViewComplaints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fbBlue"
+            android:padding="15sp"
+            android:text="@string/complaints_suggestion"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="visible"
+            android:background="@color/grey"/>
+        <TextView
+            android:id="@+id/employee_complaints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fbBlue"
+            android:padding="15sp"
+            android:text="Ticket Tracker"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:visibility="gone"
             android:background="@color/grey"/>
-
         <TextView
             android:id="@+id/textViewNotifications"
             android:layout_width="match_parent"

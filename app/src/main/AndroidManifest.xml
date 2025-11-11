@@ -32,7 +32,7 @@
         android:sharedUserId="dmsssharedId"
         android:sharedUserLabel="@string/app_name1"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -43,6 +43,15 @@
             android:launchMode="singleTask">
 
         </activity>
+        <activity
+            android:name="com.digitalminds.dmssevent.ComplaintsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.digitalminds.dmssevent.MyComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComplaintsDetailsActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.digitalminds.dmssevent.NominationsSelectionActivity"
             android:screenOrientation="portrait" />

@@ -13,8 +13,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.digitalminds.dmssevent.ComplaintsActivity;
 import com.digitalminds.dmssevent.FireBaseActivity;
 import com.digitalminds.dmssevent.MailValidationActivity;
+import com.digitalminds.dmssevent.MyComplaintActivity;
 import com.digitalminds.dmssevent.NominationsSelectionActivity;
 import com.digitalminds.dmssevent.ProfileActivity;
 import com.digitalminds.dmssevent.R;
@@ -30,7 +32,7 @@ import com.digitalminds.dmssevent.common.Utils;
 public class SettingsFragment extends Fragment implements View.OnClickListener {
     View rootView;
     MovableFloatingActionButton fab;
-    TextView textViewProfile, textViewNotifications, textViewLogout,toolbar_title,textViewNominations;
+    TextView textViewProfile, textViewNotifications, textViewLogout,toolbar_title,textViewNominations,textViewComplaints,employee_complaints;
     Toolbar toolbar;
     DmsEventsAppController appController;
     public static SettingsFragment newInstance() {
@@ -55,6 +57,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         textViewProfile = (TextView) rootView.findViewById(R.id.textViewProfile);
         fab = (MovableFloatingActionButton) rootView.findViewById(R.id.fab);
         textViewNominations = (TextView) rootView.findViewById(R.id.textViewNominations);
+        textViewComplaints = (TextView) rootView.findViewById(R.id.textViewComplaints);
+        employee_complaints = (TextView) rootView.findViewById(R.id.employee_complaints);
+
         //toolbar_title = (TextView) toolbar.findViewById(R.id.toolbar_title);
         //toolbar_title.setText("Settings");
         textViewNotifications = (TextView) rootView.findViewById(R.id.textViewNotifications);
@@ -62,6 +67,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         textViewNominations.setOnClickListener(this);
         textViewProfile.setOnClickListener(this);
         textViewNotifications.setOnClickListener(this);
+        textViewComplaints.setOnClickListener(this);
+        employee_complaints.setOnClickListener(this);
+
         textViewLogout.setOnClickListener(this);
         fab.setOnClickListener(this);
         return rootView;
@@ -80,6 +88,21 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 if (Utils.isNetworkAvailable(getActivity())) {
                     Intent i1 = new Intent(getActivity(), FireBaseActivity.class);
                     getActivity().startActivity(i1);
+                }
+                break;
+            case R.id.textViewComplaints:
+                if (Utils.isNetworkAvailable(getActivity())) {
+                    Intent i1 = new Intent(getActivity(), ComplaintsActivity.class);
+                    i1.putExtra(getString(R.string.get_complaints_for),getString(R.string.get_complaints_for_single_emps));
+
+                    getActivity().startActivity(i1);
+                }
+                break;
+            case R.id.employee_complaints:
+                if (Utils.isNetworkAvailable(getActivity())) {
+                    Intent textadminViewComplaintsIntent = new Intent(getActivity(), MyComplaintActivity.class);
+                    textadminViewComplaintsIntent.putExtra(getString(R.string.get_complaints_for),getString(R.string.get_complaints_for_all_emps));
+                    getActivity().startActivity(textadminViewComplaintsIntent);
                 }
                 break;
             case R.id.textViewNominations:

@@ -30,6 +30,7 @@ public class WebService {
     }
 
     public void getData(String url, final WebServiceResponseCallBack callback) {
+        System.out.println("API URL:: "+url);
         final Request request = new Request.Builder().url(url).build();
         client.newCall(request).enqueue(new Callback() {
             @Override

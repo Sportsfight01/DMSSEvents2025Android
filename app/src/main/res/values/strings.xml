@@ -16,6 +16,12 @@
     <string name="select_sub_type">Select Sub Type</string>
     <string name="comment">Comment</string>
     <string name="submit">Submit</string>
+    <string name="complaints_suggestion">Complaint/Suggestions</string>
+    <string name="my_complaints">My Complaints</string>
+    <string name="get_complaints_for">Get Complaints For</string>
+    <string name="get_complaints_for_all_emps">Get Complaints For All Ems</string>
+    <string name="get_complaints_for_single_emps">Get Complaints For Single Ems</string>
+    <string name="Employee_Complaints">Employee Complaints</string>
 
     <string name="dmsSharedEventsPreference">DmsSharedEventsPreference</string>
     <string name="pref_userDetails">UserDetails</string>

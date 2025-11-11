@@ -32,8 +32,8 @@ import org.json.JSONObject;
  * Created by sandeep.kumar on 14-03-2017.
  */
 public class LoginActivity extends DmsEventsBaseActivity implements WebServiceResponseCallBack {
-    TextView btnLogin, edtxEmail,textViewForgotPassword;
-    EditText edtxtPassword;
+    TextView btnLogin,textViewForgotPassword;
+    EditText edtxtPassword,edtxEmail;
     DmsEventsAppController controller;
     String password;
     ProgressDialog progressDialog;
@@ -58,7 +58,7 @@ public static int profileCallForSavingPhoto=1;
         progressDialog.setCanceledOnTouchOutside(false);
         controller = (DmsEventsAppController) getApplicationContext();
         btnLogin = (TextView) findViewById(R.id.btnLogin);
-        edtxEmail = (TextView) findViewById(R.id.edtxEmail);
+        edtxEmail = (EditText) findViewById(R.id.edtxEmail);
         edtxtPassword = (EditText) findViewById(R.id.edtxtPassword);
         textViewForgotPassword = (TextView) findViewById(R.id.textViewForgotPassword);
         edtxEmail.setText(controller.getEmailID());
@@ -182,7 +182,7 @@ public static int profileCallForSavingPhoto=1;
         }
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("Email", controller.getEmailID());
+            jsonObject.put("Email", edtxEmail.getText().toString());
             jsonObject.put("Password", password);
             jsonObject.put("DeviceType", "Android");
             jsonObject.put("DeviceToken",tokenID );

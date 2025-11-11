@@ -18,7 +18,9 @@ public class ConstantKeys {
     //public static String baseUrl = "http://www.dmss.co.in/dmssapp/api/"/*"http://192.168.100.92:1010/api/"*/;
     public static String getImagesUrl = "http://www.digitalminds.solutions/dmssapp/docs/";
     //public static String getImagesUrl = "http://www.digitalminds.solutions/DMSSApp/docs/";
-    public static String baseUrl = "http://www.digitalminds.solutions/DMSSApp/api/"/*"http://192.168.100.92:1010/api/"*/;
+    public static String baseUrl = "http://www.digitalminds.solutions/DMSSApp/api/"/*Production*/;
+//    public static String baseUrl = "http://dmsseventdev/api/"/*Dev*/;
+
     //public static String baseUrlLocal = "http://192.168.100.92:1010/api/";
     public static String loginUrl = baseUrl + "login/emplogin";
     public static String addingProfilePhotoUrl = baseUrl + "login/AddProfilePhoto";
@@ -56,6 +58,11 @@ public class ConstantKeys {
     public static String IsFavouriteKey = "IsFavouriteKey";
   //  public static String getImageUrl = "http://192.168.100.92:1010/docs/UserProfileimages/";
   //  public static String getAllImagesUrl = "http://192.168.100.92:1010/docs/Icons/";
+    public static String getComplaintsMasterData  =baseUrl+"Complaints/masterdata";
+    public static String saveComplaint   =baseUrl+"Complaints/SaveComplaint ";
+    public static String getallemployeecomplaints  =baseUrl+"Complaints/getallemployeecomplaints";
+    public static String saveComplaintStatus  =baseUrl+"Complaints/SaveComplaintStatus";
+    public static String getEmployeecomplaints  =baseUrl+"Complaints/getcomplaintsbyemployee?id=";
 
     public static String getImageUrl = getImagesUrl+"UserProfileimages/";
     public static String getAllImagesUrl =getImagesUrl+"icons/";

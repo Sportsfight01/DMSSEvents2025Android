@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorExtraLightGrey"
+    tools:context=".MyComplaintActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_header">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_button40dp"
+            app:tint="@color/theme_blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/theme_blue"
+            android:visibility="visible"
+            android:text="@string/complaints_suggestion"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:textColor="@color/theme_blue"
+            android:text="My Complaints"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/theme_blue"
+        android:layout_marginTop="10dp"
+        android:id="@+id/header_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/ll_search"
+        android:layout_below="@+id/header_line"
+        >
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ed_search"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_background"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:drawableEnd="@drawable/close_14"
+        android:textColor="#000000"
+        android:layout_weight="0.85"
+        :textColorHint="#888888"
+
+        />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter"
+            android:id="@+id/iv_filter"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"/>
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_complaints"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_search"
+        android:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:background="@color/grey"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/tv_no_complaint"
+        android:text="No Complaints Available"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -55,14 +55,14 @@ public class MailValidationActivity extends DmsEventsBaseActivity implements Web
         linearLyEmailID = (LinearLayout) findViewById(R.id.linearLyEmailID);
         versionTextView.setText(ConstantKeys.versionCode);
         edtxtEmailId = (EditText) findViewById(R.id.edtxtEmailId);
-        edtxtEmailId.setText("balaswamy.madanu@digitalminds.solutions");
+//        edtxtEmailId.setText("balaswamy.madanu@digitalminds.solutions");
 
         //if(DmsSharedPreferences.isUserLoggedIn(MailValidationActivity.this)){
         if (DmsSharedPreferences.getUserDetails(this) != null) {
             if (DmsSharedPreferences.getUserDetails(this).getEmailID().length() > 0) {
                 String[] emailId = DmsSharedPreferences.getUserDetails(this).getEmailID().split("@");
                 String email = emailId[0];
-                edtxtEmailId.setText(email);
+//                edtxtEmailId.setText(email);
                 int textLength = edtxtEmailId.getText().length();
                 edtxtEmailId.setSelection(textLength, textLength);
             }
@@ -90,7 +90,7 @@ public class MailValidationActivity extends DmsEventsBaseActivity implements Web
 
         if (b != null) {
             String emailFromLogin = (String) b.get("EmailId");
-            edtxtEmailId.setText(emailFromLogin);
+//            edtxtEmailId.setText(emailFromLogin);
         }
     }
 //new

@@ -5,7 +5,6 @@
         android:width="1dp"
         android:color="@color/theme_blue" />
 
-    // the inside color
     <solid android:color="@color/theme_blue" />
 
     <corners android:radius="60dp" />
