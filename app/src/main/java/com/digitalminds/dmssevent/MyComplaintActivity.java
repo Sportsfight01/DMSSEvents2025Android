@@ -32,6 +32,10 @@ import com.digitalminds.dmssevent.common.DmsSharedPreferences;
 import com.digitalminds.dmssevent.interfaces.WebServiceResponseCallBack;
 import com.digitalminds.dmssevent.util.ComplaintsData;
 import com.digitalminds.dmssevent.util.Utils;
+import com.google.gson.JsonObject;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.List;
 
@@ -39,7 +43,7 @@ public class MyComplaintActivity  extends AppCompatActivity implements WebServic
     ProgressDialog progressDialog;
     DmsEventsAppController controller;
     RecyclerView rv_complaints;
-    TextView tv_no_complaint;
+    TextView tv_no_complaint,tv_header;
     ImageView iv_filter;
     EditText ed_search;
     int userID=0;
@@ -56,6 +60,7 @@ public class MyComplaintActivity  extends AppCompatActivity implements WebServic
         rv_complaints = (RecyclerView)findViewById(R.id.rv_complaints);
         tv_no_complaint = findViewById(R.id.tv_no_complaint);
         iv_filter = findViewById(R.id.iv_filter);
+        tv_header = findViewById(R.id.tv_header);
 
         ed_search = findViewById(R.id.ed_search);
 
@@ -84,10 +89,12 @@ public class MyComplaintActivity  extends AppCompatActivity implements WebServic
         ed_search.setText("");
         if(complaintsFor.equalsIgnoreCase(getString(R.string.get_complaints_for_all_emps))) {
             callWebApiComplaintMasterData(ConstantKeys.getallemployeecomplaints);
+            tv_header.setText("All Tickets");
 
         }else{
 
             callWebApiComplaintMasterData(ConstantKeys.getEmployeecomplaints +userID);
+            tv_header.setText("My Tickets");
 
         }
 
@@ -231,29 +238,54 @@ public class MyComplaintActivity  extends AppCompatActivity implements WebServic
 
         progressDialog.dismiss();
         System.out.println("result:: "+result);
-        List<ComplaintsData> complaintsDataList=Utils.parseMyComplaintsData(result);
-        System.out.println("complaintsDataList:: "+complaintsDataList);
         runOnUiThread(() -> {
-                if(complaintsDataList!=null && complaintsDataList.size()>0) {
-                    tv_no_complaint.setVisibility(View.GONE);
-                    rv_complaints.setVisibility(View.VISIBLE);
-                     adapter = new MyComplaintsAdapter(complaintsDataList, item -> {
+
+            try {
+//                if(result!=null)
+                JSONObject jsonObject = new JSONObject(result);
+
+                String message=jsonObject.getString("message");
+
+                if(message!=null && message.contains("successfully")) {
+
+                    List<ComplaintsData> complaintsDataList = Utils.parseMyComplaintsData(result);
+
+                    if (complaintsDataList != null && complaintsDataList.size() > 0) {
+                        tv_no_complaint.setVisibility(View.GONE);
+                        rv_complaints.setVisibility(View.VISIBLE);
+                        ed_search.setVisibility(View.VISIBLE);
+
+
+                        adapter = new MyComplaintsAdapter(complaintsDataList, item -> {
 //                        Toast.makeText(this, "Clicked: " + item.getComplaintTypeId(), Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(MyComplaintActivity.this, ComplaintsDetailsActivity.class);
-                        intent.putExtra("complaint_data", item);
-                        intent.putExtra(getString(R.string.get_complaints_for),complaintsFor);
+                            Intent intent = new Intent(MyComplaintActivity.this, ComplaintsDetailsActivity.class);
+                            intent.putExtra("complaint_data", item);
+                            intent.putExtra(getString(R.string.get_complaints_for), complaintsFor);
 // complaintsData is an instance of ComplaintsData
-                        startActivity(intent);
+                            startActivity(intent);
 
-                    });
+                        });
 
-                    rv_complaints.setLayoutManager(new LinearLayoutManager(this));
-                    rv_complaints.setAdapter(adapter);
+                        rv_complaints.setLayoutManager(new LinearLayoutManager(this));
+                        rv_complaints.setAdapter(adapter);
+                    } else {
+                        tv_no_complaint.setVisibility(View.VISIBLE);
+                        rv_complaints.setVisibility(View.GONE);
+                        ed_search.setVisibility(View.GONE);
+                        tv_no_complaint.setText("No Tickets Available");
+
+                    }
                 }else{
+                    tv_no_complaint.setText("No Tickets Available");
                     tv_no_complaint.setVisibility(View.VISIBLE);
                     rv_complaints.setVisibility(View.GONE);
+                    ed_search.setVisibility(View.GONE);
+
                 }
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
         });
 
 
@@ -261,6 +293,15 @@ public class MyComplaintActivity  extends AppCompatActivity implements WebServic
 
     @Override
     public void onServiceCallFail(String error) {
+        runOnUiThread(() -> {
+
+            progressDialog.dismiss();
+            tv_no_complaint.setVisibility(View.VISIBLE);
+            ed_search.setVisibility(View.GONE);
+
+            tv_no_complaint.setText("Unable to Connect Server.Please try again..");
+        });
+
 
     }
 }

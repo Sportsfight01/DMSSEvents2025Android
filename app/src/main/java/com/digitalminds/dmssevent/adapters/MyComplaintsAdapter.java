@@ -36,25 +36,26 @@ public class MyComplaintsAdapter
     }
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_complaint_type, tv_category_type,tv_su_category_type,tv_status,tv_ticket_id;
+        TextView tv_complaint_type, tv_category_type,tv_su_category_type,tv_status,tv_ticket_id,tv_area,updated_time;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
-            tv_complaint_type = itemView.findViewById(R.id.tv_complaint_type);
+            tv_area = itemView.findViewById(R.id.tv_area);
             tv_category_type = itemView.findViewById(R.id.tv_category_type);
             tv_su_category_type = itemView.findViewById(R.id.tv_su_category_type);
             tv_status = itemView.findViewById(R.id.tv_status);
             tv_ticket_id = itemView.findViewById(R.id.tv_ticket_id);
-//            descriptionText = itemView.findViewById(R.id.descriptionText);
+            updated_time = itemView.findViewById(R.id.updated_time);
         }
 
         public void bind(final ComplaintsData item, final OnItemClickListener listener) {
-            tv_complaint_type.setText(item.getComplaintType());
+            tv_area.setText(item.getAreaName());
             tv_category_type.setText(item.getCategoryName());
             tv_su_category_type.setText(item.getSubCategoryName());
             tv_category_type.setText(item.getCategoryName());
             tv_status.setText(item.getCurrentStatus());
-            tv_ticket_id.setText(item.getTicketId());
+            updated_time.setText(item.getLastUpdatedOn());
+            tv_ticket_id.setText(item.getComplaintType()+" #"+item.getTicketId());
             itemView.setOnClickListener(v -> listener.onItemClick(item));
         }
     }
@@ -87,6 +88,7 @@ public class MyComplaintsAdapter
                         item.getSubCategoryName().toLowerCase().contains(lowerCaseQuery) ||
                         item.getComplaintType().toLowerCase().contains(lowerCaseQuery) ||
                         item.getEmployeeName().toLowerCase().contains(lowerCaseQuery) ||
+                        item.getAreaName().toLowerCase().contains(lowerCaseQuery) ||
                         item.getCurrentStatus().toLowerCase().contains(lowerCaseQuery) ||
                         item.getTicketId().toLowerCase().contains(lowerCaseQuery)) {
                     filteredList.add(item);

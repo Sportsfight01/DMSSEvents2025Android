@@ -31,8 +31,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ComplaintsDetailsActivity extends AppCompatActivity implements WebServiceResponseCallBack {
-    TextView tv_complaint_type, tv_category_type,tv_su_category_type,tv_status,
-            tv_description,tv_email_id,tv_employee_id,tv_ticket_id,current_status,tv_header_ticketId,tv_complaint_area,tv_update_time;
+    TextView  tv_category_type,tv_su_category_type,tv_status,
+            tv_description,tv_email_id,tv_employee_id,current_status,tv_header_ticketId,tv_complaint_area,tv_update_time;
     AutoCompleteTextView drop_down_status;
     int selectedComplaintStatusId=0;
     ProgressDialog progressDialog;
@@ -59,7 +59,7 @@ public class ComplaintsDetailsActivity extends AppCompatActivity implements WebS
         tv_back = findViewById(R.id.back);
         complaintsFor = getIntent().getStringExtra(getString(R.string.get_complaints_for));
 
-        tv_complaint_type = findViewById(R.id.tv_complaint_type);
+//        tv_complaint_type = findViewById(R.id.tv_complaint_type);
         tv_category_type = findViewById(R.id.tv_category_type);
         tv_su_category_type = findViewById(R.id.tv_su_category_type);
         tv_description = findViewById(R.id.tv_description);
@@ -68,22 +68,22 @@ public class ComplaintsDetailsActivity extends AppCompatActivity implements WebS
         drop_down_status = findViewById(R.id.drop_down_status);
         tv_email_id = findViewById(R.id.tv_email_id);
         tv_employee_id = findViewById(R.id.tv_employee_id);
-        tv_ticket_id = findViewById(R.id.tv_ticket_id);
+//        tv_ticket_id = findViewById(R.id.tv_ticket_id);
         tv_complaint_area = findViewById(R.id.tv_complaint_area);
         tv_header_ticketId = findViewById(R.id.tv_header_ticketId);
         update_statue = findViewById(R.id.update_statue);
         ll_update_stutus = findViewById(R.id.ll_update_stutus);
         current_status = findViewById(R.id.current_status);
         complaintsData = (ComplaintsData) getIntent().getSerializableExtra("complaint_data");
-        tv_complaint_type.setText(complaintsData.getComplaintType());
+//        tv_complaint_type.setText(complaintsData.getComplaintType());
         tv_category_type.setText(complaintsData.getCategoryName());
         tv_su_category_type.setText(complaintsData.getSubCategoryName());
         tv_category_type.setText(complaintsData.getCategoryName());
         tv_description.setText(complaintsData.getDescription());
         tv_email_id.setText(complaintsData.getEmailId());
         tv_employee_id.setText(complaintsData.getEmployeeName());
-        tv_ticket_id.setText(complaintsData.getTicketId());
-        tv_header_ticketId.setText(complaintsData.getTicketId());
+//        tv_ticket_id.setText(complaintsData.getTicketId());
+        tv_header_ticketId.setText(complaintsData.getComplaintType()+" #"+complaintsData.getTicketId());
         current_status.setText(complaintsData.getCurrentStatus());
         drop_down_status.setText(complaintsData.getCurrentStatus());
         tv_complaint_area.setText(complaintsData.getAreaName());
@@ -157,7 +157,7 @@ public class ComplaintsDetailsActivity extends AppCompatActivity implements WebS
         try {
             jsonObject.put("StatusId", selectedComplaintStatusId);
             jsonObject.put("id", complaintsData.getTicketId());
-            jsonObject.put("AdminId", Utils.AdminId);
+            jsonObject.put("AdminId", userID);
 
 
             System.out.println("jsonObject:: "+jsonObject);

@@ -3,11 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ComplaintsDetailsActivity"
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/applying_gradientcolor"
         android:id="@+id/rl_header">
 
         <ImageView
@@ -17,31 +19,19 @@
             android:layout_marginStart="5dp"
             android:layout_centerVertical="true"
             android:src="@drawable/back_button40dp"
-            app:tint="@color/theme_blue" />
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/back"
             android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
             android:textSize="18sp"
             android:id="@+id/tv_header_ticketId"
-            android:textColor="@color/theme_blue"
+            android:textColor="@color/white"
             android:visibility="visible"
             android:text="1423333"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_alignParentRight="true"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:id="@+id/current_status"
-            android:layout_marginEnd="5dp"
-            android:visibility="visible"
-            android:textColor="@color/black"
-            android:text="Open"/>
+
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -49,13 +39,14 @@
         android:layout_below="@+id/rl_header"
         android:background="@color/theme_blue"
         android:layout_marginTop="10dp"
+        android:visibility="gone"
         android:id="@+id/header_line"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="5dp">
-    <LinearLayout
+ <!--   <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="1"
@@ -105,6 +96,33 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_complaint_type"
                 android:text="Complaint"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:textSize="14sp"
+                android:layout_weight="0.3"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/current_status"
+                android:text="Pending"
                 android:textSize="14sp"
                 android:gravity="right"
                 android:layout_weight="0.7"/>
@@ -291,7 +309,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Last Update: "
+                android:text="Last Updated: "
                 android:layout_weight="0.3"
                 android:textSize="14sp"
                 android:textColor="@color/black"/>
@@ -318,20 +336,14 @@
             android:id="@+id/ll_update_stutus"
             android:orientation="horizontal"
             android:layout_margin="5dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Status "
-                android:layout_weight="0.3"
-                android:textSize="14sp"
-                android:textColor="@color/black"/>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_type_til"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="Select Status"
                 android:layout_marginTop="10dp"
-                android:layout_weight="0.7"
+                android:layout_weight="1"
                 style="@style/CustomTextInputLayoutStyle"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"

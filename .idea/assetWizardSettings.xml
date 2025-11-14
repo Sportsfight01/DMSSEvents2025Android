@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/filter_list_alt/baseline_filter_list_alt_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/search/baseline_search_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="242423" />
-                            <entry key="outputName" value="filter" />
+                            <entry key="outputName" value="baseline_search_24" />
                             <entry key="sourceFile" value="C:\Users\sandeep.kumar\Downloads\park-tickets-couple.svg" />
                           </map>
                         </option>

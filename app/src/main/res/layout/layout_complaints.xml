@@ -10,6 +10,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
+    android:background="@drawable/applying_gradientcolor"
     android:id="@+id/rl_header">
 
     <ImageView
@@ -19,7 +20,7 @@
         android:layout_marginStart="5dp"
         android:layout_centerVertical="true"
         android:src="@drawable/back_button40dp"
-        app:tint="@color/theme_blue" />
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
         android:layout_alignParentRight="true"
         android:textSize="18sp"
         android:layout_marginEnd="5dp"
-        android:textColor="@color/theme_blue"
+        android:textColor="@color/white"
         android:text="My Tickets"/>
 </RelativeLayout>
 <View
@@ -48,6 +49,7 @@
     android:layout_below="@+id/rl_header"
     android:background="@color/theme_blue"
     android:layout_marginTop="10dp"
+    android:visibility="gone"
     android:id="@+id/header_line"/>
     <LinearLayout
         android:layout_width="match_parent"

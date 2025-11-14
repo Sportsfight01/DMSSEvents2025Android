@@ -45,6 +45,11 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:id="@+id/line_ticket_tracker"
+            android:background="@color/grey"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:visibility="gone"
             android:background="@color/grey"/>
         <TextView
@@ -69,10 +74,7 @@
             android:padding="15sp"
             android:visibility="gone"
             android:text="Nominations"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey"/>
+
         <TextView
             android:id="@+id/textViewLogout"
             android:layout_width="match_parent"

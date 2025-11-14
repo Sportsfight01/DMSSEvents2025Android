@@ -51,6 +51,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         // getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         rootView = inflater.inflate(R.layout.fragment_settings, parent, false);
         appController=(DmsEventsAppController)getActivity().getApplicationContext();
+        int userID = DmsSharedPreferences.getUserDetails(getActivity()).getId();
+
         /*toolbar = (Toolbar)rootView. findViewById(R.id.toolbarSettings);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);*/
@@ -59,6 +61,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         textViewNominations = (TextView) rootView.findViewById(R.id.textViewNominations);
         textViewComplaints = (TextView) rootView.findViewById(R.id.textViewComplaints);
         employee_complaints = (TextView) rootView.findViewById(R.id.employee_complaints);
+        View line_ticket_tracker = (View) rootView.findViewById(R.id.line_ticket_tracker);
 
         //toolbar_title = (TextView) toolbar.findViewById(R.id.toolbar_title);
         //toolbar_title.setText("Settings");
@@ -72,6 +75,15 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
         textViewLogout.setOnClickListener(this);
         fab.setOnClickListener(this);
+
+
+        if(userID==72 || userID==267 || userID==44){
+            employee_complaints.setVisibility(View.VISIBLE);
+            line_ticket_tracker.setVisibility(View.VISIBLE);
+        }else{
+            employee_complaints.setVisibility(View.GONE);
+            line_ticket_tracker.setVisibility(View.GONE);
+        }
         return rootView;
     }
 

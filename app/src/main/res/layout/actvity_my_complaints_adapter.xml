@@ -16,19 +16,21 @@
         android:layout_margin="5dp">
 
         <TextView
+            android:id="@+id/tv_ticket_id"
             android:layout_width="0dp"
             android:layout_height="22dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.6"
             android:text="Ticket Id: "
+            android:textSize="16sp"
             android:textColor="@color/black" />
 
-        <TextView
+       <!-- <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_ticket_id"
             android:text="1423333 "
             android:textColor="@color/black"
-            android:layout_weight="0.3"/>
+            android:layout_weight="0.3"/>-->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -49,13 +51,13 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Type: "
+        android:text="Area: "
         android:layout_weight="0.3"
         android:textColor="@color/black"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_complaint_type"
+            android:id="@+id/tv_area"
             android:text="Complaint"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -96,7 +98,15 @@
             android:text="AC Issue"
             android:layout_weight="0.7"/>
     </LinearLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updated_time"
+        android:text="AC Issue"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:layout_marginStart="5dp"
+     />
 
     <View
         android:layout_width="match_parent"
